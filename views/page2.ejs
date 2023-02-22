@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../app.css" />
+  </head>
+  <body>
+    <script src="../public/javascript.js"></script>
+    <h1>User Detail Page</h1>
+    <h5>Page No</h5>
+    <%let resl=[]%> <%for(let i=0;i<=10;i++){resl.push(results[i]);}%>
+    <div class="" id="pagination">
+      <button id="previous" onclick="previous()" href="">Previous</button>
+      <button id="one" onclick="increment1()" href="" value="">1</button>
+      <button id="two" onclick="increment2()" href="" value="">2</button>
+      <button id="three" onclick="increment3()" href="" value="">3</button>
+      <button id="four" onclick="increment4()" href="" value="">4</button>
+      <button id="next" onclick="increment5()" href="" value="">Next</button>
+    </div>
+
+    <script>
+      function previous() {
+        var page = document.querySelector("page").innerHTML;
+      }
+      function increment1() {
+        var myTable = document.getElementById("myTable");
+        var insertRow = document.getElementById("one");
+
+        myTable.innerHTML = "";
+        var row = `<tr>
+          <th>Title</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Age</th>
+          <th>Street Number</th>
+          <th>Street Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Postcode</th>
+          <th>Offset</th>
+          <th>Description</th>
+          <th>Phone</th>
+          <th>Password</th>
+          <th>Username</th>
+        </tr>`;
+        myTable.innerHTML += row;
+        for (let i = 11; i <= 20; i++) {
+          var row = `<tr>
+              <%for (let i = 11; i < 20; i++){%>
+            <td><%=results[i].title%></td>
+            <td><%=results[i].first%></td>
+            <td><%=results[i].last%></td>
+            <td><%=results[i].email%></td>
+            <td><%=results[i].date%></td>
+            <td><%=results[i].age%></td>
+            <td><%=results[i].number%></td>
+            <td><%=results[i].stname%></td>
+            <td><%=results[i].city%></td>
+            <td><%=results[i].state%></td>
+            <td><%=results[i].country%></td>
+            <td><%=results[i].postcode%></td>
+            <td><%=results[i].offset%></td>
+            <td><%=results[i].description%></td>
+            <td><%=results[i].phone%></td>
+            <td><%=results[i].password%></td>
+            <td><%=results[i].username%></td>
+
+      </tr>
+      <%}%>`;
+          myTable.innerHTML += row;
+        }
+      }
+      function increment2() {
+        var myTable = document.getElementById("myTable");
+        var insertRow = document.getElementById("two");
+        myTable.innerHTML = "";
+        var row = `<tr>
+          <th>Title</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Age</th>
+          <th>Street Number</th>
+          <th>Street Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Postcode</th>
+          <th>Offset</th>
+          <th>Description</th>
+          <th>Phone</th>
+          <th>Password</th>
+          <th>Username</th>
+        </tr>`;
+        myTable.innerHTML += row;
+        for (let i = 21; i <= 30; i++) {
+          var row = `<tr>
+              <%for (let i = 21; i < 30; i++){%>
+            <td><%=results[i].title%></td>
+            <td><%=results[i].first%></td>
+            <td><%=results[i].last%></td>
+            <td><%=results[i].email%></td>
+            <td><%=results[i].date%></td>
+            <td><%=results[i].age%></td>
+            <td><%=results[i].number%></td>
+            <td><%=results[i].stname%></td>
+            <td><%=results[i].city%></td>
+            <td><%=results[i].state%></td>
+            <td><%=results[i].country%></td>
+            <td><%=results[i].postcode%></td>
+            <td><%=results[i].offset%></td>
+            <td><%=results[i].description%></td>
+            <td><%=results[i].phone%></td>
+            <td><%=results[i].password%></td>
+            <td><%=results[i].username%></td>
+
+      </tr>
+      <%}%>`;
+          myTable.innerHTML += row;
+        }
+      }
+      function increment3() {
+        var myTable = document.getElementById("myTable");
+        var insertRow = document.getElementById("three");
+        myTable.innerHTML = "";
+        var row = `<tr>
+          <th>Title</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Age</th>
+          <th>Street Number</th>
+          <th>Street Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Postcode</th>
+          <th>Offset</th>
+          <th>Description</th>
+          <th>Phone</th>
+          <th>Password</th>
+          <th>Username</th>
+        </tr>`;
+        myTable.innerHTML += row;
+        for (let i = 31; i <= 40; i++) {
+          var row = `<tr>
+              <%for (let i = 31; i < 40; i++){%>
+            <td><%=results[i].title%></td>
+            <td><%=results[i].first%></td>
+            <td><%=results[i].last%></td>
+            <td><%=results[i].email%></td>
+            <td><%=results[i].date%></td>
+            <td><%=results[i].age%></td>
+            <td><%=results[i].number%></td>
+            <td><%=results[i].stname%></td>
+            <td><%=results[i].city%></td>
+            <td><%=results[i].state%></td>
+            <td><%=results[i].country%></td>
+            <td><%=results[i].postcode%></td>
+            <td><%=results[i].offset%></td>
+            <td><%=results[i].description%></td>
+            <td><%=results[i].phone%></td>
+            <td><%=results[i].password%></td>
+            <td><%=results[i].username%></td>
+
+      </tr>
+      <%}%>`;
+          myTable.innerHTML += row;
+        }
+      }
+      function increment4() {
+        var myTable = document.getElementById("myTable");
+        var insertRow = document.getElementById("four");
+        myTable.innerHTML = "";
+        var row = `<tr>
+          <th>Title</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Age</th>
+          <th>Street Number</th>
+          <th>Street Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Postcode</th>
+          <th>Offset</th>
+          <th>Description</th>
+          <th>Phone</th>
+          <th>Password</th>
+          <th>Username</th>
+        </tr>`;
+        myTable.innerHTML += row;
+        for (let i = 41; i <= 50; i++) {
+          var row = `<tr>
+              <%for (let i = 41; i < 50; i++){%>
+            <td><%=results[i].title%></td>
+            <td><%=results[i].first%></td>
+            <td><%=results[i].last%></td>
+            <td><%=results[i].email%></td>
+            <td><%=results[i].date%></td>
+            <td><%=results[i].age%></td>
+            <td><%=results[i].number%></td>
+            <td><%=results[i].stname%></td>
+            <td><%=results[i].city%></td>
+            <td><%=results[i].state%></td>
+            <td><%=results[i].country%></td>
+            <td><%=results[i].postcode%></td>
+            <td><%=results[i].offset%></td>
+            <td><%=results[i].description%></td>
+            <td><%=results[i].phone%></td>
+            <td><%=results[i].password%></td>
+            <td><%=results[i].username%></td>
+
+      </tr>
+      <%}%>`;
+          myTable.innerHTML += row;
+        }
+      }
+
+      function first() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("first");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[1];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function last() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("last");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[2];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function email() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("email");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[3];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function city() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("city");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[8];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function state() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("state");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[9];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function country() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("country");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[10];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function phone() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("phone");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[14];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function username() {
+        let input, filter, table, tr, td, txtValue;
+
+        //Intialising Variables
+        input = document.getElementById("username");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[16];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          Search By First Name:
+          <input type="text" id="first" onkeyup="first()" placeholder="first" />
+        </div>
+
+        <div class="col-4">
+          Search By Last Name:
+          <input type="text" id="last" onkeyup="last()" placeholder="last" />
+        </div>
+        <div class="col-4">
+          Search By Email:
+          <input type="text" id="email" onkeyup="email()" placeholder="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          Search By City:
+          <input type="text" id="city" onkeyup="city()" placeholder="city" />
+        </div>
+        <div class="col-4">
+          Search By State:
+          <input type="text" id="state" onkeyup="state()" placeholder="state" />
+        </div>
+        <div class="col-4">
+          Search By Country:
+          <input
+            type="text"
+            id="country"
+            onkeyup="country()"
+            placeholder="country"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-4">
+            Search By Phone:
+            <input
+              type="text"
+              id="phone"
+              onkeyup="phone()"
+              placeholder="phone"
+            />
+          </div>
+
+          <div class="col-4">
+            Search By Username
+            <input
+              type="text"
+              id="username"
+              onkeyup="username()"
+              placeholder="username"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table
+      id="myTable"
+      value=""
+      data-filter-control="true"
+      data-show-search-clear-button="true"
+    >
+      <tbody>
+        <tr>
+          <th>Title</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Age</th>
+          <th>Street Number</th>
+          <th>Street Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Postcode</th>
+          <th>Offset</th>
+          <th>Description</th>
+          <th>Phone</th>
+          <th>Password</th>
+          <th>Username</th>
+        </tr>
+        <%for(res of resl){%>
+        <tr>
+          <td><%=res.title%></td>
+          <td><%=res.first%></td>
+          <td><%=res.last%></td>
+          <td><%=res.email%></td>
+          <td><%=res.date%></td>
+          <td><%=res.age%></td>
+          <td><%=res.number%></td>
+          <td><%=res.stname%></td>
+          <td><%=res.city%></td>
+          <td><%=res.state%></td>
+          <td><%=res.country%></td>
+          <td><%=res.postcode%></td>
+          <td><%=res.offset%></td>
+          <td><%=res.description%></td>
+          <td><%=res.phone%></td>
+          <td><%=res.password%></td>
+          <td><%=res.username%></td>
+        </tr>
+        <%}%>
+      </tbody>
+    </table>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

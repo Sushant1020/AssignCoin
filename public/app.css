@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+}
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#con {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 40px;
+  min-width: 40px;
+}
+table {
+  border-spacing: 0;
+  margin-top: 50px;
+}
+th {
+  border: 1px solid black;
+  padding: 5px;
+  width: 40px;
+  min-width: 40px;
+  position: sticky;
+  margin-top: 50px;
+}
+#table1 input {
+  width: 105px;
+  min-width: 105px;
+}
+#table1 td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 40px;
+  min-width: 40px;
+}
+#table1 th {
+  border: 1px solid black;
+  padding: 5px;
+  width: 40px;
+  min-width: 40px;
+  position: sticky;
+  margin-top: 50px;
+}
+#pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h5 {
+  text-align: center;
+}
